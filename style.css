@@ -1,0 +1,189 @@
+@font-face {
+    font-family: Poppins-Medium;
+    src: url(Fonts/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: Poppins-Regular;
+    src: url(Fonts/Poppins-Regular.ttf);
+}
+body{
+    background: rgb(220,228,236);
+    background: linear-gradient(90deg, rgba(220,228,236,1) 10%, rgba(145,180,198,1) 100%);
+}
+.window{
+    width: 26%;
+    height: 750px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 35px;
+    background-image: url("Img/Fon/IMG_7149.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    box-shadow: 1px 1px 10px #91B4C6;
+}
+.window header{
+    background-color: #91B4C6;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    border-radius: 20px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 30px 0;
+}
+.window .value{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+.window .value .temperature{
+    color: #dce4ec;
+    font-size: 70px;
+    margin-left: 10px;
+}
+.window .value .weather-icon{
+    scale: 82%;
+}
+.window header .weather{
+    font-size: 20px;
+    margin-top: 0;
+}
+.window header span{
+    color: #dce4ec;
+    font-family: "Poppins-Regular";
+    font-size: 14px;
+    margin-top: 7px;
+}
+.window main{
+    backdrop-filter: blur(15px);
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 20px;
+    /*height: 150px;*/
+    padding: 20px;
+    box-sizing: border-box;
+}
+.window main .top{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.51);
+    padding: 0 0 20px 0;
+}
+.window main .top .additionally{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 28%;
+}
+.window main .top .additionally span{
+    color: #ffffff;
+    font-size: 14px;
+    font-family: "Poppins-Regular";
+}
+.window main .top .additionally {
+    margin-top: 5px;
+}
+.window main .top .additionally .container{
+    display: flex;
+    align-items: center;
+    margin-top: 7px;
+}
+.window main .top .additionally .cloundess-img{
+    width: 30%;
+}
+.window main .top .additionally .second{
+    margin-top: 7px;
+}
+.window main .top .additionally .cloundess-img2{
+    width: 29%;
+}
+.window main .top .last{
+    width: 35%;
+}
+.window main .top .last .cloundess-img{
+    width: 30%;
+}
+.window main .top .last .last-cont{
+    margin-top: 5px;
+}
+.window main .top .additionally .container .text{
+    font-size: 15px;
+    font-family: "Poppins-Regular";
+    margin-left: 5px;
+}
+.window footer{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.window footer .input-div{
+    backdrop-filter: blur(0px);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.window footer #input{
+    width: 15%;
+    outline: 0;
+    height: 45px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 18px;
+    font-family: Poppins-Regular;
+    color: white;
+    background-color: #91B4C6;
+    opacity: 80%;
+    border: 0;
+    transition: 0.3s;
+}
+.window footer #input:focus{
+    outline: 0;
+    width: 100%;
+    height: 45px;
+    opacity: 90%;
+}
+.window footer img{
+    width: 8%;
+    position: absolute;
+    top: 10.5px;
+    z-index: 3;
+}
+.window main .buttom{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.window main .buttom .forecast{
+    display: flex;
+    margin-top: 5px;
+    flex-direction: column;
+    justify-content: left;
+    width: 25%;
+}
+.window main .buttom .forecast .day span{
+    color: white;
+    font-family: Poppins-Regular;
+    font-size: 14px;
+}
+.window main .buttom .forecast .inform{
+    display: flex;
+    align-items: center;
+    margin-top: 6px;
+}
+.window main .buttom .forecast .inform span{
+    color: white;
+    font-family: Poppins-Regular;
+    font-size: 16px;
+}
+.window main .buttom .forecast .inform .forecast-img{
+    width: 40px;
+    margin-right: 6px;
+}
