@@ -26,9 +26,7 @@ let value;
 let x;
 let y;
 
-let random = Math.floor(Math.random() * 3);
-let random2 = Math.floor(Math.random() * 2);
-let random3 = Math.floor(Math.random() * 2);
+
 let spans = document.querySelectorAll(".span");
 let spanAdditionally = document.querySelectorAll(".span-additionally");
 
@@ -61,7 +59,9 @@ function SetWeather (url){
             wind.innerHTML = `${responce.wind.speed}`;
             sunset.innerHTML = `Sunset ${Sunset(responce)}`;
             temperature.innerHTML = `${Math.round(responce.main.temp - 273)} &#176`;
-            console.log(responce.weather[0].main);
+            let random = Math.floor(Math.random() * 3);
+            let random2 = Math.floor(Math.random() * 2);
+            let random3 = Math.floor(Math.random() * 2);
             switch (responce.weather[0].main){
                 case "Clear": weatherIcon.src = "Img/Suny/Vector (1).png";
                     weather.innerHTML = "Sunny";
